@@ -1,4 +1,4 @@
-const Requester = artifacts.require('./Requester.sol');
+const MockRequester = artifacts.require('./MockRequester.sol');
 const SportradarNFLAdapter = artifacts.require('./SportradarNFLAdapter.sol');
 const fs = require('fs');
 
@@ -8,5 +8,5 @@ module.exports = deployer => {
 
   });*/
   deployer.deploy(SportradarNFLAdapter, sportradar.weeks, sportradar.homeTeams, sportradar.ids);
-  //deployer.deploy(Requester);
+  //deployer.deploy(MockRequester);
 };
